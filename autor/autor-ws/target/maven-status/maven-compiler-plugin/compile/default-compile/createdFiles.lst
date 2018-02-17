@@ -1,0 +1,4 @@
+br\com\autor\controller\AutorController.class
+br\com\autor\model\Autor.class
+br\com\autor\Application.class
+br\com\autor\dao\AutorDAO.class

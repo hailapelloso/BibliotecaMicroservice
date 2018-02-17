@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;opensanca-ws&apos; to &apos;review-ws&apos;" description="Rename resource &apos;opensanca-ws&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/opensanca-ws" name="review-ws" stamp="1476027944787" updateReferences="true"/>
+</session>

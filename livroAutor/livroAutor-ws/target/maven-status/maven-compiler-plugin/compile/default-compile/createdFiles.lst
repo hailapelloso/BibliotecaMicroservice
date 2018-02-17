@@ -1,0 +1,4 @@
+br\com\livroAutor\controller\LivroAutorController.class
+br\com\livroAutor\dao\LivroAutorDAO.class
+br\com\livroAutor\Application.class
+br\com\livroAutor\model\LivroAutor.class

@@ -1,0 +1,4 @@
+br\com\usuario\Application.class
+br\com\usuario\model\Usuario.class
+br\com\usuario\controller\UsuarioController.class
+br\com\usuario\dao\UsuarioDAO.class

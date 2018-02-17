@@ -1,0 +1,37 @@
+package br.com.opensanca.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.opensanca.dao.WorkshopDAO;
+import br.com.opensanca.model.Workshop;
+
+@RestController
+@RequestMapping(value = WorkshopController.PATH)
+public class WorkshopController {
+	
+	public static final String PATH = "/workshop";
+	
+	@RequestMapping(method = RequestMethod.GET)
+	//public ResponseEntity<String> hello(){
+	//	return new ResponseEntity<String>("Tudo certo!", HttpStatus.OK);
+	public List<Workshop> get () {
+		return (workshopDAO.findAll());
+	}
+	
+	@Autowired
+	private WorkshopDAO workshopDAO;
+	
+	@RequestMapping(method = {RequestMethod.POST, RequestMethod.PUT})
+	public ResponseEntity<Workshop> save (@RequestBody final Workshop workshopEntity){
+		return new ResponseEntity<Workshop>(workshopDAO.save(workshopEntity), HttpStatus.CREATED);
+	}
+	
+}

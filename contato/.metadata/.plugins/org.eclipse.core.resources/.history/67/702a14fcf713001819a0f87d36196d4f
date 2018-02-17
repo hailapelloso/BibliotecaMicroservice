@@ -1,0 +1,47 @@
+package br.com.emprestimo.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name = "emprestimo")
+public class Emprestimo implements Serializable{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id")
+	private int id;
+	
+	@Column(name="id_usuario")
+	private int id_usuario;
+	
+	@Column(name="id_livro")
+	private int id_livro;
+	
+	@Column(name="data_inicio")
+	@Temporal(TemporalType.DATE)
+	private Date data_inicio;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getId_usuario() {
+		return id_usuario;
+	}
+	public void setId_usuario(int id_usuario) {
+		this.id_usuario = id_usuario;
+	}
+	
+}

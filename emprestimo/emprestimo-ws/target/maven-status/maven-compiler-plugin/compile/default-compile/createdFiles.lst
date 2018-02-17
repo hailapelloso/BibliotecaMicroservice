@@ -1,0 +1,4 @@
+br\com\emprestimo\dao\EmprestimoDAO.class
+br\com\emprestimo\model\Emprestimo.class
+br\com\emprestimo\Application.class
+br\com\emprestimo\controller\EmprestimoController.class

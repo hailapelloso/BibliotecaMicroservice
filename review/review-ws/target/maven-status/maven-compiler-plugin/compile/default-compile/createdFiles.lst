@@ -1,0 +1,4 @@
+br\com\review\Application.class
+br\com\review\controller\ReviewController.class
+br\com\review\dao\ReviewDAO.class
+br\com\review\model\Review.class
